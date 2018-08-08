@@ -1,0 +1,29 @@
+
+body {
+    background: #1d749b;
+}
+
+header {
+    width: 100%;
+    background: #fff;
+}
+
+.etapa {
+    background: #2ab27b;
+    opacity: 0.3;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    border-radius: 50%;
+}
+
+.etapa-ativo{
+    opacity: 1;
+}
+
+#formularioCadastro {
+    background: #fff;
+    padding-top: 15px;
+    margin-top: 30px;
+    border-radius: 5px;
+}
