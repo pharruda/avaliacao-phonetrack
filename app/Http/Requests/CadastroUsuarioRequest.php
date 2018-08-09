@@ -36,14 +36,14 @@ class CadastroUsuarioRequest extends FormRequest
                 'numero' => 'required|integer',
                 'estado_id' => 'required|integer',
                 'cidade_id' => 'required|integer',
-                'cep' => 'required|max:9',
+                'cep' => 'required|max:9|min:9',
             ];
         }
 
         if ($this->get('passo') == 3){
             return [
-                'telefone_fixo' => 'required',
-                'telefone_celular' => 'required'
+                'telefone_fixo' => 'required|min:14',
+                'telefone_celular' => 'required|min:14'
             ];
         }
     }
