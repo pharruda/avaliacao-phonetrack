@@ -35,7 +35,7 @@ Segue as instruções para instalação em ambiente linux
      ```
  6. Pronto
  
- ## Executar App
+ ## Executar Projeto
  1. Acesse a pasta raiz do projeto e execute o comando
     ```sh
     php artisan serve
