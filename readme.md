@@ -11,29 +11,20 @@ Segue as instruções para instalação em ambiente linux
      ```sh
      composer install
      ```
- 4. Configure o acesso ao Banco dedaos, no arquivo `config/database.php`
-     ```php
-        'mysql' => [
-                   'driver' => 'mysql',
-                   'host' => env('DB_HOST', '127.0.0.1'),
-                   'port' => env('DB_PORT', '3306'),
-                   'database' => '', // adicionar database
-                   'username' => '', // adicionas username
-                   'password' => '', // adicionar password
-                   'unix_socket' => env('DB_SOCKET', ''),
-                   'charset' => 'utf8mb4',
-                   'collation' => 'utf8mb4_unicode_ci',
-                   'prefix' => '',
-                   'strict' => true,
-                   'engine' => null,
-        ],
-     ```
- 5. Execute os comandos abaixo para criar as tabelas e adicionar as cidades e os estados.
+ 4. Configure o acesso ao Banco dados, renomei o arquivo `.env.example` para `.env`
+ 
+ 5. Modifique os valores de `DB_DATABASE` `DB_USERNAME` `DB_PASSWORD` para os valores da sua conexão
+
+ 6. Execute os comandos abaixo para criar as tabelas e adicionar as cidades e os estados.
      ```sh
      php artisan migrate
      php artisan db:seed
      ```
- 6. Pronto
+ 7. Execute o comando 
+    ```sh
+      php artisan key:generate
+      ```
+ 8.Pronto
  
  ## Executar Projeto
  1. Acesse a pasta raiz do projeto e execute o comando
