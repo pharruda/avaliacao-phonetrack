@@ -11,7 +11,7 @@ Segue as instruções para instalação em ambiente linux
      ```sh
      composer install
      ```
- 4. Configure o acesso ao Banco dados, renomei o arquivo `.env.example` para `.env`
+ 4. Configure o acesso ao BD, renomei o arquivo `.env.example` para `.env`
  
  5. Modifique os valores de `DB_DATABASE` `DB_USERNAME` `DB_PASSWORD` para os valores da sua conexão
 
