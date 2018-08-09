@@ -44,7 +44,7 @@ class UsuarioController extends Controller
      * @param $id_usuario
      * @return bool|void
      */
-    public function cadastro(CadastroUsuarioRequest $request, $usuario_id)
+    public function cadastrar(CadastroUsuarioRequest $request, $usuario_id)
     {
         return ($usuario_id) ? $this->atualizar($request, $usuario_id) : $this->adicionar($request);
     }

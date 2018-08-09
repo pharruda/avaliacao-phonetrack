@@ -12,7 +12,6 @@
 */
 
 Route::get('/', 'UsuarioController@index')->name('home');
-Route::post('cadastro/{usuario_id}', 'UsuarioController@cadastro')->name('usuario.cadastro');
+Route::post('cadastro/{usuario_id}', 'UsuarioController@cadastrar')->name('usuario.cadastro');
 Route::get('usuarios', 'UsuarioController@all')->name('usuario.all');
-
 Route::get('cidades/{estado_id}', 'CidadeController@getCidadesPorEstado')->name('cidade.mostraPorEstados');
