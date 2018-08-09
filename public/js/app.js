@@ -138,7 +138,7 @@ $(document).ready(function() {
         if(localStorage.etapa == 4) {
             alert('Cadastro efetuado com Sucesso!');
             localStorage.clear();
-            location.reload();
+            window.location = config.routeUsuarios;
         }
     }
 

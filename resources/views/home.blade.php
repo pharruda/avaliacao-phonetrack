@@ -99,7 +99,8 @@
     <script>
         var config = {
             routeCadastro: "{{ route('usuario.cadastro', ':id') }}",
-            routeCidades: " {{ route('cidade.mostraPorEstados', ':id') }}"
+            routeCidades: " {{ route('cidade.mostraPorEstados', ':id') }}",
+            routeUsuarios: " {{ route('usuario.all') }}"
         }
     </script>
     <script type="text/javascript" src="{{ asset('js/app.js') }}"></script>
